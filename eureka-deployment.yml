@@ -15,7 +15,7 @@ spec:
         env: dev
     spec:
       containers:
-        - name: kaybee97/eureka
+        - name: eureka
           image: kaybee97/eureka
           ports:
             - containerPort: 8761
