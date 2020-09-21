@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: server
-          image: kaybee97/hello-server:v1
+          image: kaybee97/hello-server:v2
           ports:
             - containerPort: 8071
