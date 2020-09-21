@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: eureka
-          image: kaybee97/eureka
+          image: kaybee97/eureka:v2
           ports:
             - containerPort: 8761
