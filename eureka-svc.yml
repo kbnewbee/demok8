@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: eureka-svc
+  name: eureka
   labels:
     env: dev
 spec:
