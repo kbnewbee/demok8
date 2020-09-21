@@ -3,12 +3,13 @@ kind: HorizontalPodAutoscaler
 metadata:
   name: acg-hpa
   namespace: acg-ns
-  env: dev
+  labels:
+    env: dev
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: 
+    name: hello-server-deployment
   minReplicas: 1
   maxReplicas: 10
   targetCPUUtilizationPercentage: 80
