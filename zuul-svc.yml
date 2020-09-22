@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: zuul
+  labels:
+    env: dev
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8079
+  selector:
+    env: dev
